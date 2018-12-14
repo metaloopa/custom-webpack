@@ -1,0 +1,67 @@
+{
+  "_from": "@angular-builders/custom-webpack",
+  "_id": "@angular-builders/custom-webpack@7.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-FRRV8JVs765PjAKjy30rAH7gXNgZjXbyYqtLyv3C9MQLvdjRAkwIUwGvhJXggYlPvjab4OQdWo815YNcdECFcg==",
+  "_location": "/@angular-builders/custom-webpack",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@angular-builders/custom-webpack",
+    "name": "@angular-builders/custom-webpack",
+    "escapedName": "@angular-builders%2fcustom-webpack",
+    "scope": "@angular-builders",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular-builders/custom-webpack/-/custom-webpack-7.1.1.tgz",
+  "_shasum": "29d78573500ebf7b8a37bdccaeb398d593aa40da",
+  "_spec": "@angular-builders/custom-webpack",
+  "_where": "C:\\Users\\tonyt\\CoinSeason\\c2c-front-end",
+  "author": {
+    "name": "Evgeny Barabanov"
+  },
+  "builders": "builders.json",
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "deprecated": false,
+  "description": "Custom webpack builders for Angular build facade. Allow to modify Angular build configuration without ejecting it",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "keywords": [
+    "cli",
+    "angular",
+    "builder",
+    "angular6",
+    "angular-cli",
+    "webpack",
+    "custom"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "@angular-builders/custom-webpack",
+  "peerDependencies": {
+    "@angular-devkit/build-angular": ">= 0.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meltedspark/angular-builders/packages/custom-webpack"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc && ../../node_modules/.bin/ts-node ../../merge-schemes.ts",
+    "e2e": "../../node_modules/.bin/jest --config ../../jest-e2e.config.js",
+    "postbuild": "yarn test && yarn run e2e",
+    "test": "../../node_modules/.bin/jest --config ../../jest-ut.config.js"
+  },
+  "typings": "typings/index.d.ts",
+  "version": "7.1.1"
+}
