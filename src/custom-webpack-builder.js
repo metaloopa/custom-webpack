@@ -7,7 +7,7 @@ class CustomWebpackBuilder {
     static buildWebpackConfig(root, config, baseWebpackConfig) {
         const webpackConfigPath = config.path || exports.defaultWebpackConfigPath;
         const customWebpackConfig = require(`${core_1.getSystemPath(root)}/${webpackConfigPath}`);
-        return webpack_config_merger_1.WebpackConfigMerger.merge(baseWebpackConfig, customWebpackConfig, config.mergeStrategies, config.replaceDuplicatePlugins);
+        return webpack_config_merger_1.WebpackConfigMerger.merge(baseWebpackConfig, customWebpackConfig, config.mergeStrategies, config.replaceDuplicatePlugins, config.replaceDuplicateMinimizers);
     }
 }
 exports.CustomWebpackBuilder = CustomWebpackBuilder;
